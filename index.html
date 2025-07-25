@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoDataBank – Factual AI Query</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>GoDataBank</h1>
+  <form id="queryForm">
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="UK">UK</option>
+      <option value="India">India</option>
+    </select>
+
+    <label for="sector">Sector:</label>
+    <select id="sector" required>
+      <option value="NHS">NHS</option>
+      <option value="Education">Education</option>
+    </select>
+
+    <label for="topic">Topic:</label>
+    <select id="topic" required>
+      <option value="Staffing">Staffing</option>
+      <option value="Funding">Funding</option>
+    </select>
+
+    <button type="submit">Generate Report</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
